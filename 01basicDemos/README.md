@@ -5,7 +5,8 @@
 
 ### step1:创建react项目并初始化npm管理包(package.json)
 * mkdir 01basicDemos 创建项目目录
-* npm init --yes 初始化npm管理包, `--yes`是默认确认
+* npm init --yes 初始化npm管理包, `--yes`是默认确认了所有package包信息
+
 ### step2: 添加依赖和插件
 ```javascript
 //1、本地webpack构建和webpack构建服务端
@@ -34,7 +35,7 @@ npm install html-webpack-plugin --save-dev
   "prod": "webpack -p --progress --config webpack.config.prod.js"
 }
 ```
-**使用命令**
+**使用构建命令**
 ```javascript
 npm run dev   //构建开发环境包
 npm run prod  //构建生产环境包
@@ -175,7 +176,7 @@ webpack.config.js
 ```javascript
 { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' }
 ```
->用`?`来传入设置限制`limit`字节，当图片小于8192字节时，图片会转成Data URL；大于8192字节将会转成正常的URL格式.
+>用`?`传参设置限制`limit`字节，当图片小于8192字节时，图片会转成Data URL；否则将转成正常的URL格式.
 
 服务器加载后，可以看到`small.png` 和 `big.png`被转成如下：
 ```html
@@ -225,6 +226,7 @@ plugins: [
 ```
 * webpack.optimize.UglifyJsPlugin - Minify 压缩代码，并显示警告信息
 * 也可以加入 OccurrenceOrderPlugin。
+
 > 通过发生的次数 module 和 chunk 的 id。一些常用的 Id 取得较低（短）的 id。这使得 id 可以预测，减小大小.
 
 ### section11、抽离公共js部分(Common chunk)

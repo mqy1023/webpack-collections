@@ -13,7 +13,9 @@
 
 ![Official Dependency Tree](http://i.imgur.com/YU4xBPQ.png)
 
-## [Part1](./01basicDemos) - 01basicDemos
+## webpack教程
+
+## :a: [Part1](./01basicDemos) - 01、webpac basic Demos
 * 1、转译ES6编写的React(Babel-loader)
 * 2、多入口文件(Multiple entry files)
 * 3、转译CSS样式文件(CSS-loader)
@@ -29,13 +31,13 @@
 * 13、省略文件后缀名
 * 14、环境标识符(Environment flags)
 
-## [part2] - 02 项目中webpack实战和优化
+## :b: [part2](./) - 02 项目中webpack实战和优化
 未完待续...
 
 ## :v: 参考资源
 * [官方文档](http://webpack.github.io/docs/)
 * [中文指南](http://zhaoda.net/webpack-handbook/index.html)
-* [webpack-demos](https://github.com/ruanyf/webpack-demos) `作者：ruanyf`
-* [Webpack for React](http://www.pro-react.com/materials/appendixA/) `pro react书`
+* [webpack-demos](https://github.com/ruanyf/webpack-demos) `作者: ruanyf`
+* [Webpack for React](http://www.pro-react.com/materials/appendixA/) `书: pro react书`
 * [webpack使用优化](http://www.alloyteam.com/2016/01/webpack-use-optimization/) `from: AlloyTeam`
-* [webpack收藏系列](https://github.com/kraaas/webpack-tutorial-collection)
+* [webpack收藏系列](https://github.com/kraaas/webpack-tutorial-collection) `from: github`
